@@ -1,0 +1,6 @@
+{
+  "name": "繁體中文注音符號學習",
+  "description": "一個互動式的繁體中文注音符號（ㄅㄆㄇㄈ）學習平台，提供聲韻母對照、語音朗讀、手寫練習、詞彙拼讀與互動測驗。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

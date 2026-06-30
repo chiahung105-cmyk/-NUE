@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif TC", "Playfair Display", "Georgia", serif;
+  --font-sans: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --color-brand-bg: #F9F7F2;
+  --color-brand-text: #2D2926;
+  --color-brand-border: #E5E1D8;
+  --color-brand-accent: #8E2424;
+  --color-brand-tint: #F3ECE0;
+}
+
+/* Custom editorial styles */
+body {
+  font-family: var(--font-serif);
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+}
+
+/* Clean, elegant custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F9F7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4BEB3;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D2926;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
